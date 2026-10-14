@@ -1,52 +1,70 @@
-# ESP32 + OV7670 Camera
+# SIGHTX — Camera Integration Milestone
+### Eyes of the Blind | ESP32 + OV7670
 
-A hands-on embedded systems project using an ESP32 microcontroller and an OV7670 camera module to capture images and transfer them to a Windows laptop over USB serial.
+This project documents an early hardware milestone in **SIGHTX**, an assistive technology initiative under the broader *Eyes of the Blind* mission.
 
-## Project Overview
+The objective of this stage was to establish camera communication, capture an actual image, and transfer the image from an OV7670 camera module to a Windows laptop using an ESP32.
 
-The goal of this project is to build a low-cost camera capture system and establish a foundation for future image-processing and computer-vision applications.
+## Project Objective
 
-## Hardware
+Establish a working camera-capture pipeline as a foundation for future visual-perception experiments within SIGHTX.
+
+## Hardware Used
 
 - ESP32 development board
 - OV7670 camera module
-- USB cable for programming and serial communication
+- USB cable
 - Windows laptop
 
-## Software
+## Software and Tools
 
 - Arduino IDE
 - ESP32 Arduino framework
+- C++
 - Python
 - PySerial for USB serial communication
-- Pillow for image processing and preview development
+- Pillow for Python image handling and preview development
 
-## Current Achievements
+## Milestone Achievements
 
-- Connected and configured the OV7670 camera with the ESP32.
-- Captured an image from the camera.
+- Established communication with the OV7670 camera sensor.
+- Captured an actual image using the ESP32.
 - Transferred image data to a Windows laptop over USB serial.
-- Saved a captured image as a BMP file.
-- Began developing a Python-based SNAP application.
+- Saved the captured frame as a BMP image.
+- Began developing a Python-based SNAP interface for image capture and preview.
 
-## Current Capture Specifications
+## Capture Specifications
 
-- Capture mode: QQVGA
-- Resolution: 160 × 120 pixels
-- Transfer method: USB serial
-- Image format: BMP
+| Specification | Value |
+|---|---|
+| Microcontroller | ESP32 |
+| Camera module | OV7670 |
+| Capture mode | QQVGA |
+| Resolution | 160 × 120 pixels |
+| Image format | BMP |
+| Transfer interface | USB serial |
+| Host system | Windows laptop |
 
-## Future Improvements
+## Evidence
 
-- Improve image quality and explore higher resolutions.
-- Complete a graphical SNAP application with image preview.
-- Explore continuous image streaming.
-- Investigate real-time image processing and computer vision.
+Project evidence will include the actual captured image, photographs of the hardware setup, and a video demonstrating the camera operating and transferring image data.
+
+## Next Steps
+
+- Improve the Python capture and preview interface.
+- Investigate higher camera resolutions and image quality.
+- Explore image processing as a foundation for future computer-vision experiments.
+
+## Connection to SIGHTX
+
+Reliable camera capture is an early technical building block for SIGHTX. This milestone establishes image acquisition and transfer; object recognition and assistive visual perception remain future development goals.
 
 ## Project Status
 
-The basic image capture and USB serial transfer have been demonstrated. The graphical preview application and further improvements remain in development.
+**Milestone achieved:** Actual image capture and USB serial transfer demonstrated.
 
-## Author
+**Current scope:** Camera integration and image acquisition—not a completed smart-glasses or navigation system.
 
-An Electrical and Electronics Engineering student exploring embedded systems, microcontrollers, and computer vision through practical hardware projects.
+---
+
+*Part of SIGHTX, developed under the Eyes of the Blind mission.*
